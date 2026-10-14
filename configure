@@ -818,8 +818,8 @@ if($gopt_enable_incl eq "YES") {
     $options=~m/--with-boost-lib=(\S*)/i;
     $gopt_with_boost_lib = $1;
   }
-  print "\nGot boost lib opt $gopt_with_boost_lib\n"
-  system("ls $gopt_with_boost_lib")
+  print "\nGot boost lib opt $gopt_with_boost_lib\n";
+  system("ls $gopt_with_boost_lib");
   if(! -d $gopt_with_boost_lib)  {
     print "\n*** Warning *** INCL has been enabled but you didn't specify the boost library path \n";
   }
