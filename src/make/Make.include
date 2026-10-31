@@ -482,10 +482,10 @@ CXXFLAGS      = -W -Wall -fPIC -Wshadow \
 		$(GOPT_WITH_CXX_USERDEF_FLAGS)
 ifeq ($(strip $(GCC_GE_8_0_0)), YES)
   # -ffriend-injection is deprecated, soon to go away
-  CXXFLAGS += -Wno-strict-aliasing
+  CXXFLAGS += -Wno-strict-aliasing -fsigned-char
 else
   ifeq ($(strip $(GCC_GE_4_1_0)), YES)
-    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection
+    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection -fsigned-char
   endif
 endif
 LDFLAGS       = -g -Wl,--no-as-needed -Wl,--no-undefined
@@ -515,10 +515,10 @@ CXXFLAGS      = -W -Wall -fPIC -Wshadow \
 		$(GOPT_WITH_CXX_USERDEF_FLAGS)
 ifeq ($(strip $(GCC_GE_8_0_0)), YES)
   # -ffriend-injection is deprecated, soon to go away
-  CXXFLAGS += -Wno-strict-aliasing
+  CXXFLAGS += -Wno-strict-aliasing -fsigned-char
 else
   ifeq ($(strip $(GCC_GE_4_1_0)), YES)
-    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection
+    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection -fsigned-char
   endif
 endif
 LDFLAGS       = -g -Wl,--no-as-needed -Wl,--no-undefined
@@ -548,10 +548,10 @@ CXXFLAGS      = -W -Wall -fPIC -Wshadow \
     $(GOPT_WITH_CXX_USERDEF_FLAGS)
 ifeq ($(strip $(GCC_GE_8_0_0)), YES)
   # -ffriend-injection is deprecated, soon to go away
-  CXXFLAGS += -Wno-strict-aliasing
+  CXXFLAGS += -Wno-strict-aliasing -fsigned-char
 else
   ifeq ($(strip $(GCC_GE_4_1_0)), YES)
-    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection
+    CXXFLAGS += -Wno-strict-aliasing -ffriend-injection -fsigned-char
   endif
 endif
 LDFLAGS       = -g -Wl,--no-as-needed -Wl,--no-undefined
