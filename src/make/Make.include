@@ -585,8 +585,7 @@ CPP_INCLUDES := \
     $(APFEL_INCLUDES) \
     $(GSL_INCLUDES) \
     $(GENIE_INCLUDES) \
-    $(PROFESSOR2_INCLUDES) \
-    $(INCL_INCLUDES)
+    $(PROFESSOR2_INCLUDES)
 
 ROOT_DICT_GEN_INCLUDES := \
     $(LINUX_SYS_INCLUDES) \
@@ -604,9 +603,7 @@ LIBRARIES := $(SYSLIBS) \
              $(LOG_LIBRARIES) \
              $(GSL_LIBRARIES) \
              $(GPROF_LIBRARIES) \
-             $(EXTRALIBS) \
-             $(INCL_LIBRARIES) \
-             $(BOOST_LIBRARIES)
+             $(EXTRALIBS)
 
 # Default compiler and preprocessor flags
 
