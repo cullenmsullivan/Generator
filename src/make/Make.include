@@ -177,6 +177,7 @@ INCL_INCLUDES  =
 ifeq ($(strip $(GOPT_ENABLE_INCL)),YES)
 
 INCL_INCLUDES  = -I$(GOPT_WITH_INCL_INC) -I$(GOPT_WITH_BOOST_INC)
+INCL_CCLAGS    = $(shell $(GOPT_WITH_INCL_LIB)/../bin/inclxx-config --cflags )
 INCL_DFLAGS    = $(shell $(GOPT_WITH_INCL_LIB)/../bin/inclxx-config --dflags )
 INCL_LIBRARIES = -L$(GOPT_WITH_INCL_LIB)  $(shell $(GOPT_WITH_INCL_LIB)/../bin/inclxx-config --libs )
 
